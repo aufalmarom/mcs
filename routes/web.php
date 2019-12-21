@@ -20,3 +20,15 @@ Route::get('/dashboard', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::group(['prefix' => 'manager', 'namespace' => '\App\Http\Controllers\Manager', 'middleware' => 'manager'], function () {
+
+    });
+    Route::group(['prefix' => 'verificator', 'namespace' => '\App\Http\Controllers\Verificator', 'middleware' => 'verificator'], function () {
+
+    });
+    Route::group(['prefix' => 'user', 'namespace' => '\App\Http\Controllers\User', 'middleware' => 'user'], function () {
+
+    });
+});
