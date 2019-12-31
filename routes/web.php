@@ -11,21 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/dashboard', function () {
-    return view('backend.manager.dashboard');
-})->name('dashboard');
+
 Auth::routes([
     'register' =>false,
 ]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('landingpage');
 
 Route::group(['middleware' => 'auth'], function () {
     Route::group(['prefix' => 'manager', 'namespace' => '\App\Http\Controllers\Manager', 'middleware' => 'manager'], function () {
-
+        Route::get('/dashboard', 'ManagerController@ReadDashboard')->name('dashboard');
     });
     Route::group(['prefix' => 'verificator', 'namespace' => '\App\Http\Controllers\Verificator', 'middleware' => 'verificator'], function () {
 
@@ -34,3 +29,4 @@ Route::group(['middleware' => 'auth'], function () {
 
     });
 });
+

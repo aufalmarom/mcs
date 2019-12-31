@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>mcs | monitoring cross-selling system</title>
-    <link rel="stylesheet" href="{{asset('assets/vendors/mdi/css/materialdesignicons.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/vendors/css/vendor.bundle.base.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/vendors/mdi/css/materialdesignicons.min.css')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/vendors/css/vendor.bundle.base.css')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/css/style.css')}}">
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="{{asset('images/fav-aufalmarom.png')}}" />
+    <link rel="shortcut icon" href="{{asset('public/images/fav-aufalmarom.png')}}" />
   </head>
   <body>
     <div class="container-scroller">
       <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-          <a class="navbar-brand brand-logo"><img style="height:40px; width:40px;" src="{{asset('images/aufalmarom.png')}}" alt="logo" /> MCS</a>
-          <a class="navbar-brand brand-logo-mini" href="#"><img style="height:40px; width:40px;" src="{{asset('images/fav-aufalmarom.png')}}" alt="logo" /></a>
+          <a class="navbar-brand brand-logo"><img style="height:40px; width:40px;" src="{{asset('public/images/aufalmarom.png')}}" alt="logo" /> MCS</a>
+          <a class="navbar-brand brand-logo-mini" href="#"><img style="height:40px; width:40px;" src="{{asset('public/images/fav-aufalmarom.png')}}" alt="logo" /></a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-stretch">
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -35,7 +35,7 @@
             <li class="nav-item nav-profile dropdown">
               <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
                 <div class="nav-profile-img">
-                  <img src="assets/images/faces/face1.jpg" alt="image">
+                  <img src="{{asset('public/assets/images/faces/face1.jpg')}}" alt="image">
                   <span class="availability-status online"></span>
                 </div>
                 <div class="nav-profile-text">
@@ -67,7 +67,7 @@
             <li class="nav-item nav-profile">
               <a href="#" class="nav-link">
                 <div class="nav-profile-image">
-                  <img src="assets/images/faces/face1.jpg" alt="profile">
+                  <img src="{{asset('public/assets/images/faces/face1.jpg')}}" alt="profile">
                   <span class="login-status online"></span>
                   <!--change to offline or busy as needed-->
                 </div>
@@ -142,12 +142,12 @@
     </div>
     <!-- container-scroller -->
 
-    <script src="{{asset('assets/vendors/js/vendor.bundle.base.js')}}"></script>
-    <script src="{{asset('assets/vendors/chart.js/Chart.min.js')}}"></script>
-    <script src="{{asset('assets/js/off-canvas.js')}}"></script>
-    <script src="{{asset('assets/js/hoverable-collapse.js')}}"></script>
-    <script src="{{asset('assets/js/misc.js')}}"></script>
-    <script src="{{asset('assets/js/dashboard.js')}}"></script>
-    <script src="{{asset('assets/js/todolist.js')}}"></script>
+    <script src="{{asset('public/assets/vendors/js/vendor.bundle.base.js')}}"></script>
+    <script src="{{asset('public/assets/vendors/chart.js/Chart.min.js')}}"></script>
+    <script src="{{asset('public/assets/js/off-canvas.js')}}"></script>
+    <script src="{{asset('public/assets/js/hoverable-collapse.js')}}"></script>
+    <script src="{{asset('public/assets/js/misc.js')}}"></script>
+    <script src="{{asset('public/assets/js/dashboard.js')}}"></script>
+    <script src="{{asset('public/assets/js/todolist.js')}}"></script>
   </body>
 </html>
