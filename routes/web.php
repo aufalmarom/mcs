@@ -17,7 +17,9 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('backend.manager.dashboard');
 })->name('dashboard');
-Auth::routes();
+Auth::routes([
+    'register' =>false,
+]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
